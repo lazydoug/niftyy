@@ -27,6 +27,116 @@ module.exports = {
           800: '#010101',
         },
       },
+      fontSize: {
+        'hero-lg': [
+          '104px',
+          { lineHeight: '1', letterSpacing: '0em', fontWeight: '800' },
+        ],
+        'hero-md': [
+          '96px',
+          { lineHeight: '1', letterSpacing: '0em', fontWeight: '800' },
+        ],
+        'hero-sm': [
+          '64px',
+          { lineHeight: '1', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h1-lg': [
+          '80px',
+          { lineHeight: '1', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h1-md': [
+          '64px',
+          { lineHeight: '1', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h1-sm': [
+          '48px',
+          { lineHeight: '1', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h2-lg': [
+          '64px',
+          { lineHeight: '1', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h2-md': [
+          '48px',
+          { lineHeight: '1', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h3-lg': [
+          '48px',
+          { lineHeight: '1', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h3-md': [
+          '40px',
+          { lineHeight: '1.2', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h3-sm': [
+          '32px',
+          { lineHeight: '1.25', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h4-lg': [
+          '32px',
+          { lineHeight: '1.25', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'h4-sm': [
+          '24px',
+          { lineHeight: '1.33', letterSpacing: '-0.02em', fontWeight: '800' },
+        ],
+        'body1-lg': [
+          '24px',
+          { lineHeight: '1.33', letterSpacing: '-0.02em', fontWeight: '700' },
+        ],
+        'body1-md': [
+          '20px',
+          { lineHeight: '1.2', letterSpacing: '-0.02em', fontWeight: '700' },
+        ],
+        'body1-sm': [
+          '16px',
+          { lineHeight: '1.5', letterSpacing: '-0.02em', fontWeight: '700' },
+        ],
+        'body2-lg': [
+          '20px',
+          { lineHeight: '1.6', letterSpacing: '-0.02em', fontWeight: '500' },
+        ],
+        'body2-b-lg': [
+          '20px',
+          { lineHeight: '1.6', letterSpacing: '-0.02em', fontWeight: '700' },
+        ],
+        'body2-md': [
+          '16px',
+          { lineHeight: '1.5', letterSpacing: '-0.02em', fontWeight: '500' },
+        ],
+        'title-lg': [
+          '18px',
+          { lineHeight: '2', letterSpacing: '-0.01em', fontWeight: '700' },
+        ],
+        'base-lg': [
+          '16px',
+          { lineHeight: '1.5', letterSpacing: '-0.01em', fontWeight: '700' },
+        ],
+        'base-m-lg': [
+          '16px',
+          { lineHeight: '1.5', letterSpacing: '-0.01em', fontWeight: '500' },
+        ],
+        'base-md': [
+          '15px',
+          { lineHeight: '1.6', letterSpacing: '-0.01em', fontWeight: '700' },
+        ],
+        'base-sm': [
+          '14px',
+          { lineHeight: '1.43', letterSpacing: '-0.01em', fontWeight: '700' },
+        ],
+        'caption-lg': [
+          '14px',
+          { lineHeight: '1.43', letterSpacing: '-0.02em', fontWeight: '500' },
+        ],
+        'caption-b-lg': [
+          '14px',
+          { lineHeight: '1.43', letterSpacing: '-0.02em', fontWeight: '700' },
+        ],
+        'button-lg': [
+          '12px',
+          { lineHeight: '2', letterSpacing: '0.17em', fontWeight: '800' },
+        ],
+      },
     },
   },
   plugins: [],

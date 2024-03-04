@@ -1,4 +1,4 @@
-function RightArrow({ width, height }) {
+function LongRightArrowSvg({ width, height }) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -17,4 +17,4 @@ function RightArrow({ width, height }) {
   )
 }
 
-export default RightArrow
+export default LongRightArrowSvg

@@ -66,7 +66,7 @@ function Hero() {
             </h1>
 
             <div className='flex flex-col gap-4'>
-              <Button className='border-neutral-700 border-2 text-neutral-800 py-5'>
+              {/* <Button className='border-neutral-700 border-2 text-neutral-800 py-5'>
                 VIEW NFT
                 <i className='ml-3'>
                   <ArrowForwardSvg className='inline align-middle' />
@@ -74,7 +74,7 @@ function Hero() {
               </Button>
               <Button className='text-neutral-100 bg-neutral-700 py-5'>
                 PLACE A BID
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

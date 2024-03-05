@@ -1,3 +1,4 @@
+import FeaturedNFT from '@/components/featured-nft'
 import Hero from '@/components/hero'
 import HotNFT from '@/components/hot-nft'
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <HotNFT />
+      <FeaturedNFT />
     </main>
   )
 }

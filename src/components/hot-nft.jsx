@@ -85,9 +85,9 @@ function HotNFT() {
           ))}
         </div>
 
-        <Button className='bg-neutral-700 text-neutral-100 block mx-auto mt-10 mb-8 px-9 py-[18px] text-button-lg rounded'>
+        {/* <Button className='bg-neutral-700 text-neutral-100 block mx-auto mt-10 mb-8 px-9 py-[18px] text-button-lg rounded'>
           EXPLORE MORE
-        </Button>
+        </Button> */}
       </div>
     </section>
   )

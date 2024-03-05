@@ -1,10 +1,8 @@
-import { Children } from 'react'
+// TODO: animate click event
 
 function Button({ children, className }) {
   return (
-    <button
-      className={`text-button-lg rounded ${className}`}
-      style={{ padding: '20px' }}>
+    <button className={`text-button-lg rounded ${className}`}>
       {children}
     </button>
   )

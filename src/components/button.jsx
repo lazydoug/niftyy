@@ -1,8 +1,16 @@
 // TODO: animate click event
 
-function BtnDefault({ children, className }) {
+function BtnDefaultOutlined({ children, className }) {
   return (
-    <button className={`text-button-lg rounded ${className}`}>
+    <button className='uppercase border-2 border-neutral-700 rounded px-8 py-4 text-button-lg text-neutral-800'>
+      {children}
+    </button>
+  )
+}
+
+function BtnDefaultFilled({ children }) {
+  return (
+    <button className='uppercase bg-neutral-700 rounded px-8 py-5 text-button-lg text-neutral-100'>
       {children}
     </button>
   )
@@ -10,15 +18,23 @@ function BtnDefault({ children, className }) {
 
 function BtnPrimaryDark({ children }) {
   return (
-    <button className='bg-neutral-700 rounded px-9 py-[18px] text-button-lg text-neutral-100'>
+    <button className='uppercase bg-neutral-700 rounded px-9 py-[18px] text-button-lg text-neutral-100'>
       {children}
     </button>
   )
 }
 
-function BtnPrimaryLight({ children }) {
+/**
+ * @param {JSX.Element} children - Button text and optional icon
+ * @param {boolean} fill - A boolean that causes the button to fill the parent element
+ * @returns 
+ */
+function BtnPrimaryLight({ children, fill }) {
+  fill = fill ? 'w-full' : ''
+
   return (
-    <button className='bg-neutral-100 rounded px-9 py-[18px] text-button-lg text-neutral-700'>
+    <button
+      className={`uppercase bg-neutral-100 rounded px-9 py-[18px] text-button-lg text-neutral-700 block ${fill}`}>
       {children}
     </button>
   )
@@ -26,7 +42,7 @@ function BtnPrimaryLight({ children }) {
 
 function BtnPrimaryIconDark({ children }) {
   return (
-    <button className='bg-neutral-700 rounded px-9 py-[18px] text-button-lg text-neutral-100'>
+    <button className='uppercase bg-neutral-700 rounded px-9 py-[18px] text-button-lg text-neutral-100'>
       {children}
       <i className='ml-3'>
         <svg
@@ -58,7 +74,7 @@ function BtnPrimaryIconDark({ children }) {
 
 function BtnPrimaryIconLight({ children }) {
   return (
-    <button className='bg-neutral-100 rounded px-9 py-[18px] text-button-lg text-neutral-700'>
+    <button className='uppercase bg-neutral-100 rounded px-9 py-[18px] text-button-lg text-neutral-700'>
       {children}
       <i className='ml-3'>
         <svg
@@ -90,7 +106,7 @@ function BtnPrimaryIconLight({ children }) {
 
 function BtnSecondaryDark({ children }) {
   return (
-    <button className='border-2 border-neutral-600 rounded px-8 py-3 text-button-lg text-neutral-700'>
+    <button className='uppercase border-2 border-neutral-600 rounded px-8 py-3 text-button-lg text-neutral-700'>
       {children}
     </button>
   )
@@ -98,7 +114,7 @@ function BtnSecondaryDark({ children }) {
 
 function BtnSecondaryLight({ children }) {
   return (
-    <button className='border-2 border-neutral-600 rounded px-8 py-3 text-button-lg text-neutral-300'>
+    <button className='uppercase border-2 border-neutral-600 rounded px-8 py-3 text-button-lg text-neutral-300'>
       {children}
     </button>
   )
@@ -106,7 +122,7 @@ function BtnSecondaryLight({ children }) {
 
 function BtnSecondaryIconLeft({ children }) {
   return (
-    <button className='border-2 border-neutral-300 rounded px-8 py-3 text-button-lg text-neutral-100'>
+    <button className='uppercase border-2 border-neutral-300 rounded px-8 py-3 text-button-lg text-neutral-100'>
       <i className='mr-2'>
         <svg
           width='24'
@@ -138,7 +154,7 @@ function BtnSecondaryIconLeft({ children }) {
 
 function BtnSecondaryIconRight({ children }) {
   return (
-    <button className='border-2 border-neutral-300 rounded px-8 py-3 text-button-lg text-neutral-100'>
+    <button className='uppercase border-2 border-neutral-300 rounded px-8 py-3 text-button-lg text-neutral-100'>
       {children}
       <i className='ml-2'>
         <svg
@@ -169,7 +185,8 @@ function BtnSecondaryIconRight({ children }) {
 }
 
 export {
-  BtnDefault,
+  BtnDefaultOutlined,
+  BtnDefaultFilled,
   BtnPrimaryDark,
   BtnPrimaryLight,
   BtnPrimaryIconDark,

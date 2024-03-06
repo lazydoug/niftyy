@@ -2,10 +2,10 @@ import Image from 'next/image'
 
 import PlaceholderSvg from './svg/placeholder'
 import LongRightArrowSvg from './svg/long-right-arrow'
-import ArrowForwardSvg from './svg/arrow-forward'
+import {ArrowForwardSvg} from './svg/arrows'
 
 import heroImage from '@/assets/hero-image.png'
-import Button from './button'
+import { BtnDefaultOutlined, BtnDefaultFilled } from './button'
 
 function Hero() {
   return (
@@ -66,15 +66,13 @@ function Hero() {
             </h1>
 
             <div className='flex flex-col gap-4'>
-              {/* <Button className='border-neutral-700 border-2 text-neutral-800 py-5'>
+              <BtnDefaultOutlined>
                 VIEW NFT
                 <i className='ml-3'>
                   <ArrowForwardSvg className='inline align-middle' />
                 </i>
-              </Button>
-              <Button className='text-neutral-100 bg-neutral-700 py-5'>
-                PLACE A BID
-              </Button> */}
+              </BtnDefaultOutlined>
+              <BtnDefaultFilled>PLACE A BID</BtnDefaultFilled>
             </div>
           </div>
         </div>

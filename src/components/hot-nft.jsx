@@ -1,7 +1,6 @@
-import ArrowForwardSvg from './svg/arrow-forward'
-
+import {ArrowForwardSvg} from './svg/arrows'
 import HotArtist from './hot-artist'
-import Button from './button'
+import  { BtnPrimaryDark } from './button'
 
 function HotNFT() {
   const artists = [
@@ -85,9 +84,9 @@ function HotNFT() {
           ))}
         </div>
 
-        {/* <Button className='bg-neutral-700 text-neutral-100 block mx-auto mt-10 mb-8 px-9 py-[18px] text-button-lg rounded'>
-          EXPLORE MORE
-        </Button> */}
+        <div className='w-fit mx-auto mt-10 mb-8'>
+          <BtnPrimaryDark>EXPLORE MORE</BtnPrimaryDark>
+        </div>
       </div>
     </section>
   )

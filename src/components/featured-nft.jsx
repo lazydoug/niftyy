@@ -1,5 +1,6 @@
+import Image from 'next/image'
 
-import { BtnPrimary, BtnPrimaryDark, BtnPrimaryIconDark, BtnPrimaryIconLight, BtnPrimaryLight, BtnSecondaryDark, BtnSecondaryIconLeft, BtnSecondaryIconRight, BtnSecondaryLight } from './button'
+import { BtnPrimaryLight } from './button'
 import { CardImageCircle, CardImageSquare } from './card-image'
 
 function FeaturedNFT() {
@@ -20,25 +21,18 @@ function FeaturedNFT() {
 
         <h1 className='text-h1-sm text-neutral-100'>Beyond the Dream.</h1>
 
-        <div>
+        <div className='flex flex-col gap-6'>
           <div>
             <p className='text-title-lg text-neutral-400 mb-2'>Buy now price</p>
             <h3 className='text-h3-md text-neutral-100'>8.00 ETH</h3>
             <p className='text-title-lg text-neutral-400'>$24,635.39</p>
           </div>
-          {/* <Button /> */}
+          <BtnPrimaryLight fill>MAKE OFFER</BtnPrimaryLight>
         </div>
       </div>
 
-      <div>
-      <BtnPrimaryDark>PrimaryDark</BtnPrimaryDark>
-      <BtnPrimaryLight>PrimaryLight</BtnPrimaryLight>
-      <BtnPrimaryIconDark>PrimaryIconDark</BtnPrimaryIconDark>
-      <BtnPrimaryIconLight>PrimaryIconLight</BtnPrimaryIconLight>
-      <BtnSecondaryDark>SecondaryDark</BtnSecondaryDark>
-      <BtnSecondaryLight>SecondaryLight</BtnSecondaryLight>
-      <BtnSecondaryIconLeft>SecondaryLeft</BtnSecondaryIconLeft>
-      <BtnSecondaryIconRight>SecondaryIconRight</BtnSecondaryIconRight>
+      <div className='relative before:content-[""] pt-[100%]'>
+          <Image src={'/shubham-dhage-cc.png'} alt='' fill objectFit='cover'/>
       </div>
     </section>
   )

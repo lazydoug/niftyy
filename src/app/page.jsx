@@ -1,7 +1,7 @@
 import CuratedCollections from '@/components/curated-collections'
 import FeaturedNFT from '@/components/featured-nft'
 import Hero from '@/components/hero'
-import HotNFT from '@/components/hot-nft'
+import HotNFT from '@/components/hot-nft-artists'
 
 export default function Home() {
   return (

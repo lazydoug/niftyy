@@ -1,6 +1,8 @@
 // TODO: animate click event
 
-function BtnDefaultOutlined({ children, className }) {
+import ArrowSvg from './svg/arrows'
+
+function BtnDefaultOutlined({ children }) {
   return (
     <button className='uppercase border-2 border-neutral-700 rounded px-8 py-4 text-button-lg text-neutral-800'>
       {children}
@@ -27,7 +29,7 @@ function BtnPrimaryDark({ children }) {
 /**
  * @param {JSX.Element} children - Button text and optional icon
  * @param {boolean} fill - A boolean that causes the button to fill the parent element
- * @returns 
+ * @returns
  */
 function BtnPrimaryLight({ children, fill }) {
   fill = fill ? 'w-full' : ''
@@ -184,6 +186,23 @@ function BtnSecondaryIconRight({ children }) {
   )
 }
 
+/**
+ * Represents an icon button element
+ * @param {boolean} filled Indicates that the button is filled
+ * @returns {JSX.Element}
+ */
+const IconButton = ({ children, filled }) => {
+  const style =
+    (filled && 'bg-neutral-700 text-neutral-100') ||
+    'border-2 border-neutral-300 text-neutral-700'
+
+  return (
+    <button className={`w-[60px] h-[60px] rounded-full text-center ${style}`}>
+      {children}
+    </button>
+  )
+}
+
 export {
   BtnDefaultOutlined,
   BtnDefaultFilled,
@@ -195,4 +214,5 @@ export {
   BtnSecondaryLight,
   BtnSecondaryIconLeft,
   BtnSecondaryIconRight,
+  IconButton,
 }

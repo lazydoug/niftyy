@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import PlaceholderSvg from './svg/placeholder'
 import LongRightArrowSvg from './svg/long-right-arrow'
-import {ArrowForwardSvg} from './svg/arrows'
+import ArrowSvg from './svg/arrows'
 
 import heroImage from '@/assets/hero-image.png'
 import { BtnDefaultOutlined, BtnDefaultFilled } from './button'
@@ -69,7 +69,7 @@ function Hero() {
               <BtnDefaultOutlined>
                 VIEW NFT
                 <i className='ml-3'>
-                  <ArrowForwardSvg className='inline align-middle' />
+                  <ArrowSvg />
                 </i>
               </BtnDefaultOutlined>
               <BtnDefaultFilled>PLACE A BID</BtnDefaultFilled>

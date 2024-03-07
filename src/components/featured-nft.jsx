@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import { BtnPrimaryLight } from './button'
-import { CardImageCircle, CardImageSquare } from './card-image'
+import ImageCard from './image-card'
 
 function FeaturedNFT() {
   const artist = { userName: '@randomdash', avatar: '/random-dash.png' }
@@ -11,12 +11,10 @@ function FeaturedNFT() {
     <section className='px-6 py-12 bg-neutral-800'>
       <div className='flex flex-col gap-6'>
         <div className='md:flex md:gap-4'>
-          <CardImageCircle title={artist.userName} image={artist.avatar} />
-          <CardImageSquare
-            title={artwork.name}
-            image={artwork.image}
-            className='hidden md:flex'
-          />
+          <ImageCard title={artist.userName} image={artist.avatar} round />
+          <div className='hidden md:flex'>
+            <ImageCard title={artwork.name} image={artwork.image} />
+          </div>
         </div>
 
         <h1 className='text-h1-sm text-neutral-100'>Beyond the Dream.</h1>
@@ -31,8 +29,9 @@ function FeaturedNFT() {
         </div>
       </div>
 
+      {/*sets aspect ratio of image container;l to 1:1*/}
       <div className='relative before:content-[""] pt-[100%]'>
-          <Image src={'/shubham-dhage-cc.png'} alt='' fill objectFit='cover'/>
+        <Image src={'/shubham-dhage-cc.png'} alt='' fill />
       </div>
     </section>
   )

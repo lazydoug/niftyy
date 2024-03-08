@@ -1,7 +1,5 @@
 // TODO: animate click event
 
-import ArrowSvg from './svg/arrows'
-
 function BtnDefaultOutlined({ children }) {
   return (
     <button className='uppercase border-2 border-neutral-700 rounded px-8 py-4 text-button-lg text-neutral-800'>
@@ -27,16 +25,15 @@ function BtnPrimaryDark({ children }) {
 }
 
 /**
+ * Primary button with light theme
  * @param {JSX.Element} children - Button text and optional icon
- * @param {boolean} fill - A boolean that causes the button to fill the parent element
+ * @param {string} className - Valid TailwinCSS utitlity classes
  * @returns
  */
-function BtnPrimaryLight({ children, fill }) {
-  fill = fill ? 'w-full' : ''
-
+function BtnPrimaryLight({ children, className }) {
   return (
     <button
-      className={`uppercase bg-neutral-100 rounded px-9 py-[18px] text-button-lg text-neutral-700 block ${fill}`}>
+      className={`uppercase bg-neutral-100 rounded px-9 py-[18px] text-button-lg text-neutral-700 block ${className}`}>
       {children}
     </button>
   )

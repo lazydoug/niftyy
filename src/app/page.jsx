@@ -1,3 +1,4 @@
+import Auctions from '@/components/auctions'
 import CuratedCollections from '@/components/curated-collections'
 import FeaturedNFT from '@/components/featured-nft'
 import Hero from '@/components/hero'
@@ -10,6 +11,7 @@ export default function Home() {
       <HotNFT />
       <FeaturedNFT />
       <CuratedCollections />
+      <Auctions />
     </main>
   )
 }

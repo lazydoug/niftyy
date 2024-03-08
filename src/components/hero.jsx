@@ -61,9 +61,9 @@ function Hero() {
           </div>
 
           <div>
-            <h1 className='text-h1-sm text-neutral-700 mb-8'>
+            <h2 className='text-h1-sm text-neutral-700 mb-8'>
               The creator network.
-            </h1>
+            </h2>
 
             <div className='flex flex-col gap-4'>
               <BtnDefaultOutlined>

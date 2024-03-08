@@ -17,7 +17,7 @@ function FeaturedNFT() {
           </div>
         </div>
 
-        <h1 className='text-h1-sm text-neutral-100'>Beyond the Dream.</h1>
+        <h2 className='text-h1-sm text-neutral-100'>Beyond the Dream.</h2>
 
         <div className='flex flex-col gap-6'>
           <div>

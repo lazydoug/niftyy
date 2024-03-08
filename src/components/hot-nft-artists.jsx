@@ -58,9 +58,9 @@ function HotNFT() {
     <section>
       <div className='px-6 py-12 bg-neutral-100'>
         <div className='flex flex-col gap-6'>
-          <h1 className='text-h1-sm text-neutral-700'>
+          <h2 className='text-h1-sm text-neutral-700'>
             Hot NFT artists of the month.
-          </h1>
+          </h2>
           <div className='w-20 h-20 rounded-full p-7 text-neutral-800 border border-neutral-200  shadow-[0_20px_16px_-6px_rgba(0,0,0,0.15)]'>
             <ArrowSvg />
           </div>

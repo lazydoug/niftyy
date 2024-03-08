@@ -39,20 +39,20 @@ function CollectionCard({ collectionName, artist, avatar, price, assets }) {
       </div>
 
       <div>
-        <p className='text-body1-md text-neutral-700 mr-auto'>
-          {collectionName}
+        <p className='flex justify-between items-center text-body1-md text-neutral-700'>
+          <span>{collectionName}</span>
           <span className='text-title-lg text-neutral-500'>Floor price</span>
         </p>
 
-        <div className='flex gap-3 items-center'>
+        <div className=' gap-3 items-center'>
           <div className='relative w-8 h-8 rounded-full bg-accent-2 overflow-clip'>
             <Image src={avatar} alt={artist} fill />
           </div>
-          <p className='text-title-lg'>
-            {artist} <span>{price}</span>
+          <p className='flex justify-between text-title-lg'>
+            <span>{artist} </span> <span>{price}</span>
           </p>
         </div>
-      </div>  
+      </div>
     </div>
   )
 }

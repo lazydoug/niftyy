@@ -7,7 +7,7 @@ function CuratedCollections() {
     {
       name: 'Cute Planet',
       artist: '@tranmautritam',
-      avatar: '/gelo.png',
+      avatar: '/avatars/gelo.png',
       price: '1.0 ETH',
       assets: [
         '/collections/cp-1.png',
@@ -23,7 +23,7 @@ function CuratedCollections() {
     {
       name: 'UI8 all-access',
       artist: '@randomdash',
-      avatar: '/random-dash.png',
+      avatar: '/avatars/random-dash.png',
       price: '1.2 ETH',
       assets: [
         '/collections/ui8-1.png',
@@ -43,7 +43,7 @@ function CuratedCollections() {
     {
       name: 'Beyond the Dream',
       artist: '@aaronpenne',
-      avatar: '/aaron-penne.png',
+      avatar: '/avatars/aaron-penne.png',
       price: '1.0 ETH',
       assets: [
         '/collections/beyond-1.png',
@@ -60,7 +60,7 @@ function CuratedCollections() {
     {
       name: 'Xcalibir',
       artist: '@lazydoug',
-      avatar: '/lazy-doug.png',
+      avatar: '/avatars/lazy-doug.png',
       price: '1.5 ETH',
       assets: [
         '/collections/xcalibir-1.png',
@@ -81,7 +81,7 @@ function CuratedCollections() {
     <section className='bg-neutral-100 px-6 py-12 overflow-clip'>
       <div className='flex flex-col gap-10'>
         <div>
-          <h1 className='text-h1-sm text-neutral-700'>Curated collections.</h1>
+          <h2 className='text-h1-sm text-neutral-700'>Curated collections.</h2>
 
           <div className='flex gap-3'>
             <IconButton>

@@ -78,7 +78,7 @@ function CuratedCollections() {
   ]
 
   return (
-    <section className='bg-neutral-100 px-6 py-12'>
+    <section className='bg-neutral-100 px-6 py-12 overflow-clip'>
       <div className='flex flex-col gap-10'>
         <div>
           <h1 className='text-h1-sm text-neutral-700'>Curated collections.</h1>
@@ -96,7 +96,14 @@ function CuratedCollections() {
         {/* slider */}
         <div className='flex gap-10'>
           {collections.map(collection => (
-            <CollectionCard key={collection.name} items={collection.assets} />
+            <CollectionCard
+              key={collection.name}
+              collectionName={collection.name}
+              artist={collection.artist}
+              avatar={collection.avatar}
+              price={collection.price}
+              assets={collection.assets}
+            />
           ))}
         </div>
       </div>

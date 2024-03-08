@@ -4,7 +4,7 @@ import { BtnPrimaryLight } from './button'
 import ImageCard from './image-card'
 
 function FeaturedNFT() {
-  const artist = { userName: '@randomdash', avatar: '/random-dash.png' }
+  const artist = { userName: '@randomdash', avatar: '/avatars/random-dash.png' }
   const artwork = { name: 'Escape', image: '/escape.png' }
 
   return (

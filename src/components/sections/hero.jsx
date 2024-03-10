@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-import PlaceholderSvg from './svg/placeholder'
-import LongRightArrowSvg from './svg/long-right-arrow'
-import ArrowSvg from './svg/arrows'
+import PlaceholderSvg from '../svg/placeholder'
+import LongRightArrowSvg from '../svg/long-right-arrow'
+import ArrowSvg from '../svg/arrows'
 
 import heroImage from '@/assets/hero-image.png'
-import { BtnDefaultOutlined, BtnDefaultFilled } from './button'
+import { BtnDefaultOutlined, BtnDefaultFilled } from '../button'
 
 function Hero() {
   return (

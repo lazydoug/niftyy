@@ -1,5 +1,5 @@
-import { BtnPrimaryLight } from './button'
-import ImageCard from './image-card'
+import { BtnPrimaryLight } from '../button'
+import ImageCard from '../image-card'
 
 function Auctions() {
   const numberOfAuctions = 109

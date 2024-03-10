@@ -1,6 +1,6 @@
-import ArrowSvg from './svg/arrows'
-import HotArtist from './hot-artist'
-import  { BtnPrimaryDark } from './button'
+import ArrowSvg from '../svg/arrows'
+import HotArtist from '../hot-artist'
+import  { BtnPrimaryDark } from '../button'
 
 function HotNFT() {
   const artists = [

@@ -1,6 +1,7 @@
-import { IconButton } from './button'
-import CollectionCard from './collection-card'
-import ArrowSvg from './svg/arrows'
+import { IconButton } from "../button"
+import CollectionCard from "../collection-card"
+import ArrowSvg from "../svg/arrows"
+
 
 function CuratedCollections() {
   const collections = [
